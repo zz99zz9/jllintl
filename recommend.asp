@@ -69,8 +69,6 @@ prs.open psql,conn,1,1%>
 
     <div class="ltit">地理位置</div>
     <div class="ltxt" >
-   <%if rrs("bigclassid")=20 then%> <a href="http://www.jllresidential.cn/intl/newsdetail.asp?prod_id=249" class="smh">&gt;&gt;&gt;&gt;&gt;&gt;美国置业说明会 三月中国巡回 详情请点击</a><%end if%>
-
 			<div id='map' style="height:500px;"><img src="<%=rrs("DefaultPicUrl2")%>" style="width:100%;"/></div>
 
             </div>
