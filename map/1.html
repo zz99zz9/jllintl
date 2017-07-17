@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+
+
+
+<title>Lightbox | 英国海外投资 | 仲量联行-国际住宅</title>
+
+
+
+
+</head>
+
+
+<body>
+
+<script type='text/javascript' src='//www.jllresidential.cn/wp-includes/js/jquery/jquery.js'></script>
+			<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
+			<link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
+			<h3>区域地图</h3>
+			<div id='map' style="height:500px;"></div>
+						<script>
+
+			jQuery(window).on('load', function () {
+
+				L.mapbox.accessToken = 'pk.eyJ1IjoieWFvMzA2MCIsImEiOiI3NGQ5NDM2YmE4MjYzNmZkNGExNThlNjA5YTFhZDQ2NyJ9.3RGUv-6hh0owfcHh4LSmEQ';
+				var map = L.mapbox.map('map', 'mapbox.streets')
+				    .setView(["51.541857","-0.210613"], 15);
+
+				//map.touchZoom.disable();
+				map.scrollWheelZoom.disable();
+
+				var featureLayer = L.mapbox.featureLayer({
+				        type: 'FeatureCollection',
+				        features: [{
+				            type: 'Feature',
+				            properties: {
+				                'name': 'The Avenue',
+				                'marker-color': '#548cba',
+				                'marker-size': 'large',
+				                'marker-symbol': 'building'
+				            },
+				            geometry: {
+				                type: 'Point',
+				                coordinates: ["-0.210613","51.541857"]		}
+				        }]
+				    })
+				    .addTo(map);
+
+				// Note that calling `.eachLayer` here depends on setting GeoJSON _directly_
+				// above. If you're loading GeoJSON asynchronously, like from CSV or from a file,
+				// you will need to do this within a `featureLayer.on('ready'` event.
+				featureLayer.eachLayer(function(layer) {
+
+				    // here you call `bindPopup` with a string of HTML you create - the feature
+				    // properties declared above are available under `layer.feature.properties`
+				    var content = '<h2>'+ layer.feature.properties.name +'<\/h2>';
+				    layer.bindPopup(content);
+				});
+			});
+			</script>
+
+
+
+</body>
+</html>
