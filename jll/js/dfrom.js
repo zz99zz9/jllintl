@@ -62,6 +62,9 @@ checkwrint2("#wrint2");
 $("#wrint3").blur(function(){
 checkwrint3("#wrint3");
 	});
+$("#wrint7").blur(function(){
+checkwrint4("#wrint7");
+	});
 //房源页固定表单
 $("#wrint4").blur(function(){
 checkwrint1("#wrint4");
@@ -72,18 +75,23 @@ checkwrint2("#wrint5");
 $("#wrint6").blur(function(){
 checkwrint3("#wrint6");
 	});
+$("#wrint8").blur(function(){
+checkwrint4("#wrint8");
+	});
 //房源页提交
 $("#wrbtn2").click(function(){
 	checkwrint1("#wrint4");
 checkwrint2("#wrint5");
 checkwrint3("#wrint6");
+checkwrint4("#wrint8");
 if ($("#wrint4").hasClass("no")||$("#wrint5").hasClass("no")||$("#wrint6").hasClass("no")){
 console.log("over");
 	}else{
 		dname=$("#wrint4").val();
 		dtel=$("#wrint5").val();
 		dmail=$("#wrint6").val();
-			 $.post("jll/js/dfrom.asp",{dname:dname,dtel:dtel,dmail:dmail},
+		dcity=$("#wrint8").val();
+			 $.post("jll/js/dfrom.asp",{dname:dname,dtel:dtel,dmail:dmail,dcity:dcity},
 	  function(data,status){
 	  if(status=="success"){
 		//var jsObjstr =JSON.parse(data);
@@ -101,15 +109,17 @@ $("#wrbtn1").click(function(){
 checkwrint1("#wrint1");
 checkwrint2("#wrint2");
 checkwrint3("#wrint3");
+checkwrint4("#wrint7");
 
-if ($("#wrint1").hasClass("no")||$("#wrint2").hasClass("no")||$("#wrint3").hasClass("no")){
+if ($("#wrint1").hasClass("no")||$("#wrint2").hasClass("no")||$("#wrint3").hasClass("no")||$("#wrint7").hasClass("no")){
 console.log("over");
 	}else{
 
 dname=$("#wrint1").val();
 		dtel=$("#wrint2").val();
 		dmail=$("#wrint3").val();
-			 $.post("jll/js/dfrom.asp",{dname:dname,dtel:dtel,dmail:dmail},
+		dcity=$("#wrint7").val();
+			 $.post("jll/js/dfrom.asp",{dname:dname,dtel:dtel,dmail:dmail,dcity:dcity},
 	  function(data,status){
 	  if(status=="success"){
 		//var jsObjstr =JSON.parse(data);
@@ -173,6 +183,16 @@ function checkwrint3(v){
 	}else if(!reg1.test($(v).val())){
 		$(v).addClass("no");
 		$(v).next(".errinfo").html("请确认邮箱地址是否输入正确");
+
+	}else{
+		$(v).removeClass("no");
+		$(v).next(".errinfo").html("");
+	}
+}
+function checkwrint4(v){
+		if ($(v).val()=="0"||$(v).val()==""){ 
+		$(v).addClass("no");
+		$(v).next(".errinfo").html("请选择您的所在城市");
 
 	}else{
 		$(v).removeClass("no");

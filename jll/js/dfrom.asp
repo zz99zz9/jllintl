@@ -10,8 +10,9 @@ Conn.Open connstr
 dname=request("dname")
 dtel=request("dtel")
 dmail=request("dmail")
+dcity=request("dcity")
 if dtel<>"" then
-  conn.execute"INSERT INTO [lyb] (lyname,lyTel,lydate,lyemail) VALUES ('"&dname&"','"&dtel&"','"&now()&"','"&dmail&"')"
+  conn.execute"INSERT INTO [lyb] (lyname,lyTel,lydate,lyemail,lytext) VALUES ('"&dname&"','"&dtel&"','"&now()&"','"&dmail&"','"&dcity&"')"
   end if
 
 %>
