@@ -6,12 +6,12 @@
 		<div id="slideBox" class="slideBox ">
 
 			<div class="hd">
-				<ul><li></li><li></li><li></li></ul>
+				<ul><li></li><li></li><li></li><li></li><li></li></ul>
 			</div>
 			<div class="bd">
 				<ul>
 				 <%Set prs= Server.CreateObject("ADODB.Recordset")
-                                psql="select top 3 * From [links] where wid=1 order by oid desc,ID desc"
+                                psql="select top 5 * From [links] where wid=1 order by oid desc,ID desc"
                                 prs.open psql,conn,1,1
                                 i=0%>
                                 <%do while not prs.eof%>

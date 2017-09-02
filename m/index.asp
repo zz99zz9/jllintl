@@ -4,7 +4,7 @@
 <!-- -->   <div class="swiper-container">
         <div class="swiper-wrapper">
         				 <%Set prs= Server.CreateObject("ADODB.Recordset")
-                                        psql="select top 3 * From [links] where wid=2 order by oid desc,ID desc"
+                                        psql="select top 5 * From [links] where wid=2 order by oid desc,ID desc"
                                         prs.open psql,conn,1,1
                                         i=0%>
                                         <%do while not prs.eof%>
@@ -29,7 +29,7 @@
 rs.Open "select top 6 * from [Table_Product] order by OrderId desc,articleid desc",conn,1,1%>
 <%i=1
 do while not rs.eof%>
-<li onClick="javascript:location.href='recommend.asp?articleid=<%=rs("articleid")%>'"><img src="../<%=rs("defaultpicurl")%>" class="pic" alt="<%=rs("picalt")%>"/><%if rs("Elite")="True" then%><i class="hot"></i><%end if%><span class="lname"><%=rs("entitle")%>&nbsp;<%=rs("title")%></span><br><span class="laddr">(<%=rs("bigclassname")%>，<%=rs("smallclassname")%>)</span>
+<li onClick="javascript:location.href='recommend.asp?articleid=<%=rs("articleid")%>'"><img src="../<%=rs("defaultpicurl")%>" class="pic" alt="<%=rs("picalt")%>"/><%if rs("Elite")="True" then%><i class="hot"></i><%end if%><span class="lname"><%=rs("entitle")%>&nbsp;<%=rs("title")%></span><br><span class="laddr">(<%=rs("bigclassname")%>,<%=rs("smallclassname")%>)</span>
 <br /><span class="fc-red">￥<%=rs("jgzj")%>万起</span></li>
 
   <%rs.movenext

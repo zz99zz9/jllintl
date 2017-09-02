@@ -37,9 +37,9 @@ if order="" then order=0
 <%dim SiteTitle,siteKey,SiteCont
 if lx=0 and lb=0 and sc=0 and fj=0 and bc=0 then%>
 
-<title>海外豪华公寓，海外豪宅别墅-JLL仲量联行</title>
-<meta name="Keywords" content="海外豪华公寓，海外豪宅别墅" />
-<meta name="Description" content="仲量联行(住宅）专注于国内和海外房产的投资和管理服务，为您的海外置业投资提供专业的决策。如果您有英国买房， 美国，澳洲买房的需求，欢迎联系仲量联行海外置业部。" />
+<title>海外豪宅投资，海外豪宅别墅-JLL仲量联行</title>
+<meta name="Keywords" content="海外豪宅投资，海外豪宅别墅" />
+<meta name="Description" content="仲量联行(住宅）专注于国内和海外房产的投资和管理服务，为您的海外置业投资提供专业的决策。如果您有海外豪宅投资， 英国，美国，澳洲买房的需求，欢迎联系仲量联行海外置业部。" />
 
 <%elseif lx=0 and lb=0 and sc=0 and fj=0 and bc<>0 then
 %>
