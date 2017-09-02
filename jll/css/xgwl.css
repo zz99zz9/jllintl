@@ -170,16 +170,17 @@ ul.list1 li .text .logo,ul.list2 li .text .sbtn{display:none;}
 ul.list1 li .hot{display:block;position:absolute;z-index:5;top:0px;left:0;background:url(../img/hot.png);width:70px;height:70px;}
 .stxt i{margin-right:25px;}
 /*通用列表二*/
+/*通用列表二*/
 ul.list2{clear:both;}
-ul.list2 li.ftr{margin-left:0;}
-ul.list2 li{width:330px;height:365px;margin-left:54px;margin-bottom:40px;position:relative;float:left;display:block;background:#000;}
-ul.list2 li .pic{width:330px;height:225px;}
-ul.list2 li .lname{color: #fff;font-size:18px;display:block;margin: 10px 0 10px 10px;height: 24px; text-overflow: ellipsis;width: 300px; white-space: nowrap;overflow: hidden;}
-ul.list2 li .laddr{color:#fff;font-size:12px;display:block;margin-left:10px;line-height:170%;padding-right:8px;}
-ul.list2 li .text{z-index:2;position:absolute;top:0;left:0;background:url(../img/mask1.png);width:355px;height:250px;color:#fff;padding:25px 35px;opacity:0;transition:.3s;}
-ul.list2 li .text i{font-size:14px;position:absolute;left:35px;top:210px;z-index:3;color:#fff;}
-ul.list2 li:hover {opacity:0.9;transition:.3s;}
-ul.list2 li .text .logo,ul.list2 li .text .sbtn{display:none;}
+ul.list2 li.ftr,ul.list2 a.ftr{margin-left:0;}
+ul.list2 li,ul.list2 a{width:330px;height:365px;margin-left:54px;margin-bottom:40px;position:relative;float:left;display:block;background:#000;}
+ul.list2 li .pic,ul.list2 a .pic{width:330px;height:225px;}
+ul.list2 li .lname,ul.list2 a .lname{color: #fff;font-size:18px;display:block;margin: 10px 0 10px 10px;height: 24px; text-overflow: ellipsis;width: 300px; white-space: nowrap;overflow: hidden;}
+ul.list2 li .laddr,ul.list2 a .laddr{color:#fff;font-size:12px;display:block;margin-left:10px;line-height:170%;padding-right:8px;}
+ul.list2 li .text,ul.list2 a .text{z-index:2;position:absolute;top:0;left:0;background:url(../img/mask1.png);width:355px;height:250px;color:#fff;padding:25px 35px;opacity:0;transition:.3s;}
+ul.list2 li .text i,ul.list2 a .text i{font-size:14px;position:absolute;left:35px;top:210px;z-index:3;color:#fff;}
+ul.list2 li:hover,ul.list2 a:hover {opacity:0.9;transition:.3s;}
+ul.list2 li .text .logo,ul.list2 li .text .sbtn,ul.list2 a .text .sbtn{display:none;}
 /*通用列表三*/
 ul.list3{clear:both;}
 ul.list3 li.ftr{margin-left:0;}
