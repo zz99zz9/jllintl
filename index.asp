@@ -65,7 +65,7 @@ do while not rs.eof%>
 rs.Open "select top 6 * from [prod] where classid=11 order by oid desc,prod_id desc",conn,1,1%>
 <%i=1
 do while not rs.eof%>
-<li class="<%if i=1 then%>ftr<%end if%> b_w" onClick="javascript:location.href='newsdetail.asp?prod_id=<%=rs("prod_id")%>'"><img src="<%=rs("prod_pic")%>" class="pic" alt="<%=rs("picalt")%>" title="<%=rs("picalt")%>"/><span class="lname"><%=left(rs("prod_name"),16)%></span><span class="laddr"><%=left(RemoveHTML(rs("prod_detail")),70)%>……</span></li>
+<a class="<%if i=1 then%>ftr<%end if%> b_w" href='newsdetail.asp?prod_id=<%=rs("prod_id")%>'><img src="<%=rs("prod_pic")%>" class="pic" alt="<%=rs("picalt")%>" title="<%=rs("picalt")%>"/><span class="lname"><%=left(rs("prod_name"),16)%></span><span class="laddr"><%=left(RemoveHTML(rs("prod_detail")),70)%>……</span></a>
 
   <%rs.movenext
 	i=i+1
@@ -86,7 +86,7 @@ do while not rs.eof%>
 rs.Open "select top 6 * from [prod] where classid=12 order by oid desc,prod_id desc",conn,1,1%>
 <%i=1
 do while not rs.eof%>
-<li class="<%if i=1 then%>ftr<%end if%> b_w" onClick="javascript:location.href='newsdetail.asp?prod_id=<%=rs("prod_id")%>'"><img src="<%=rs("prod_pic")%>" class="pic" alt="<%=rs("picalt")%>" title="<%=rs("picalt")%>"/><span class="lname"><%=left(rs("prod_name"),16)%></span><span class="laddr"><%=left(RemoveHTML(rs("prod_detail")),70)%>……</span></li>
+<a class="<%if i=1 then%>ftr<%end if%> b_w" href="newsdetail.asp?prod_id=<%=rs("prod_id")%>"><img src="<%=rs("prod_pic")%>" class="pic" alt="<%=rs("picalt")%>" title="<%=rs("picalt")%>"/><span class="lname"><%=left(rs("prod_name"),16)%></span><span class="laddr"><%=left(RemoveHTML(rs("prod_detail")),70)%>……</span></li>
 
   <%rs.movenext
 	i=i+1
