@@ -35,7 +35,6 @@ i=0
 do while not rs.eof
 'if i>0 then response.write (" | ")
 %>
-
 <!--<a href="<%=rs("CFile")%>"><%=rs("cname")%></a>-->
 <%
 rs.movenext
@@ -49,7 +48,6 @@ rs.close
 </div>
 </div>
 </div>
-
 <!--<script type="text/javascript" src="jll/js/jquery1.42.min.js"></script>
 -->        <script src="jll/js/jquery-1.7.1.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="jll/js/jquery.SuperSlide.2.1.1.js"></script>

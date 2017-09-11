@@ -14,6 +14,7 @@
         <option value="广东">广东</option>
       </select>
       <span class="errinfo"></span>
+      <input type="hidden" value="<%=title%>" id="urltit">
       <input type="button" class="wrbtn b_h" value="提交" id="wrbtn1"/>
       <input type="hidden" id="downurl" />
     </form></div>
