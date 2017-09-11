@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /%#Data$%Ba#se%%/   
-Disallow: /jlladmin/      
-Disallow: /inc/
-Sitemap: http://www.jllresidential.cn/intl/sitemap.xml  

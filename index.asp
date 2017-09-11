@@ -45,7 +45,7 @@
 rs.Open "select top 6 * from [Table_Product] where Elite=True order by OrderId desc,articleid desc",conn,1,1%>
 <%i=1
 do while not rs.eof%>
-<li class="<%if i=1 then%>ftr<%end if%> hand" onClick="javascript:location.href='recommend.asp?articleid=<%=rs("articleid")%>'"><img src="<%=rs("defaultpicurl")%>" class="pic" alt="<%=rs("picalt")%>"/><%if rs("Elite")="True" then%><i class="hot"></i><%end if%><div class="text"><%=rs("entitle")%><i>￥<%=rs("jgzj")%>万+</i></div><span class="lname"><%=rs("entitle")%>&nbsp;<%=rs("title")%></span><span class="laddr"><%=rs("bigclassname")%>，<%=rs("smallclassname")%></span></li>
+<li class="<%if i=1 then%>ftr<%end if%> hand"> <a href='recommend.asp?articleid=<%=rs("articleid")%>'"><img src="<%=rs("defaultpicurl")%>" class="pic" alt="<%=rs("picalt")%>"/><%if rs("Elite")="True" then%><i class="hot"></i><%end if%><div class="text"><%=rs("entitle")%><i>￥<%=rs("jgzj")%>万+</i></div><span class="lname"><%=rs("entitle")%>&nbsp;<%=rs("title")%></span><span class="laddr"><%=rs("bigclassname")%>，<%=rs("smallclassname")%></span></a></li>
 
   <%rs.movenext
 	i=i+1

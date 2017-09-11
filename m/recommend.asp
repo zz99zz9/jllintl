@@ -45,7 +45,7 @@ prs.open psql,conn,1,1%>
                          </div>
                          
                          <div class="content-wrapper xq fz13">
-                         房屋总价:约￥<%=rs("jgzj")%>万起<br>户型:<%=rs("hx")%><br>积面均价:￥<%=rs("jgjj")%>万起（每平米）<br>开发商:<%=rs("ckfsname")%><br><br>
+                         房屋总价:约￥<%=rs("jgzj")%>万起<br>户型:<%=rs("hx")%><br>面积均价:￥<%=rs("jgjj")%>万起（每平米）<br>开发商:<%=rs("ckfsname")%><br><br>
                          <!--<div class="cleft"></div>
                          <div class="cright"><br></div>-->
                          <div class="cbottom"><i class="cl1 ">教育资源</i><i class="cl2 ">滨水景观</i><i class="cl3 ">绿化自然</i><br><i class="cl1 ">交通便捷</i><i class="cl2 ">商务资源</i></div>
