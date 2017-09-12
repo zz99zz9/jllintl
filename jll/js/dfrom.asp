@@ -11,8 +11,9 @@ dname=request("dname")
 dtel=request("dtel")
 dmail=request("dmail")
 dcity=request("dcity")
+dtit=request("dtit")
 if dtel<>"" then
-  conn.execute"INSERT INTO [lyb] (lyname,lyTel,lydate,lyemail,lytext) VALUES ('"&dname&"','"&dtel&"','"&now()&"','"&dmail&"','"&dcity&"')"
+  conn.execute"INSERT INTO [lyb] (lyname,lyTel,lydate,lyemail,lytext,lytitle) VALUES ('"&dname&"','"&dtel&"','"&now()&"','"&dmail&"','"&dcity&"','"&dtit&"')"
   end if
 
 %>

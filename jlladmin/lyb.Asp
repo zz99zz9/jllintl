@@ -38,11 +38,12 @@ rs.open sql,conn,1,1
 <table class="table table-striped border-top table-hover" id="sample_1">
 <thead>
           <tr > 
-<th width="70" class=""><strong>城市</strong></th>
-            <th width="60" class=""><strong>姓名</strong></th>
-            <th width="70" class=""><strong>电话</strong></th>
+<th width="40" class=""><strong>城市</strong></th>
+            <th width="40" class=""><strong>姓名</strong></th>
+            <th width="50" class=""><strong>电话</strong></th>
             
-            <th width="70"  class="hidden-phone"><strong>邮箱</strong></td>
+            <th width="40"  class="hidden-phone"><strong>邮箱</strong></td>
+                <th width="70" ><strong>来源</strong></td>
             <th width="50" class=""><strong>留言时间</strong></th>
        <!--     <th width="170"  class="hidden-phone"><strong>内容</strong></th>-->
 
@@ -55,6 +56,7 @@ rs.open sql,conn,1,1
             <td class=""><%=rs("lyname")%></td>
             <td class=""><%=rs("lytel")%></td>
             <td class="hidden-phone"><%=rs("lyemail")%></td>
+            <td class="hidden-phone"><%=rs("lytitle")%></td>
             <td ><%= FormatDateTime(rs("lydate"),2) %></td>
             <!--<td class="hidden-phone">< %=rs("lytext")%></td>-->
 

@@ -91,7 +91,8 @@ console.log("over");
 		dtel=$("#wrint5").val();
 		dmail=$("#wrint6").val();
 		dcity=$("#wrint8").val();
-			 $.post("jll/js/dfrom.asp",{dname:dname,dtel:dtel,dmail:dmail,dcity:dcity},
+		dtit=$("#urltit").val();
+			 $.post("jll/js/dfrom.asp",{dname:dname,dtel:dtel,dmail:dmail,dcity:dcity,dtit:dtit},
 	  function(data,status){
 	  if(status=="success"){
 		//var jsObjstr =JSON.parse(data);
