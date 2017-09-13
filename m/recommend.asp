@@ -56,7 +56,7 @@ prs.open psql,conn,1,1%>
                          <span class="btnn hlbtn"><img src="jll/img/mm1.png"><br>汇率计算</span>
                          <span class="btnn gfznbtn"><img src="jll/img/mm2.png"><br>购房指南</span>
                          <span class="btnn" onClick="javascript:location.href='report.asp'"><img src="jll/img/mm3.png"><br>市场报告</span>
-                         <span class="btnn"  onClick="javascript:location.href='<%if rs("DefaultPicUrl2")="" then%>../20165new.pdf<%else%>../20165new.pdf<%end if%>'"><!--<%=rs("DefaultPicUrl2")%>--><img src="jll/img/mm4.png"><br>项目介绍</span>
+                         <a class="btnn"  href="#ltit2"><!--<%=rs("DefaultPicUrl2")%>--><img src="jll/img/mm4.png"><br>项目介绍</a>
                          <div class="clear"></div>
                          </div>
                  
@@ -73,7 +73,7 @@ prs.open psql,conn,1,1%>
      <div class="line2"></div>
     <div class="content-wrapper xq bline">
             
-           <div class="ltit2"><i class="titred"></i>项目简介</div>
+           <div class="ltit2" id="ltit2" name="ltit2"><i class="titred"></i>项目简介</div>
                          </div>
                          <div class="content-wrapper xq">
     <div class="ltxt"><%=rs("content")%></div><br>
