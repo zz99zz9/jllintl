@@ -72,8 +72,8 @@ prs.open psql,conn,1,1%>
     </div>
      <div class="line2"></div>
     <div class="content-wrapper xq bline">
-            
-           <div class="ltit2" id="ltit2" name="ltit2"><i class="titred"></i>项目简介</div>
+            <div  id="ltit2" name="ltit2" style="position:absolute;top:-80px;left:0;"></div>
+           <div class="ltit2"><i class="titred"></i>项目简介</div>
                          </div>
                          <div class="content-wrapper xq">
     <div class="ltxt"><%=rs("content")%></div><br>
