@@ -30,7 +30,7 @@ do while not rs.eof and i<rs.PageSize
 %>
     <li class="ftr hand">
 
-    <span class="titlist"><a href="<%=rs("prod_pic")%>" target="_blank"><%=left(rs("prod_name"),30)%></a> [<%=replace(formatdatetime(rs("prod_date"),2),"/","-")%>]</span>
+    <span class="titlist"><a href="../<%=rs("prod_pic")%>" target="_blank"><%=left(rs("prod_name"),30)%></a> [<%=replace(formatdatetime(rs("prod_date"),2),"/","-")%>]</span>
     <i class="ico_down b_h" onclick="openfrom('<%=rs("prod_pic")%>');"></i>
     </li>
 <%
