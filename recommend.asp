@@ -106,7 +106,6 @@ prs.open psql,conn,1,1%>
         <option value="广东">广东</option>
       </select>
       <span class="errinfo"></span>
-      
       <input type="button" class="wrbtn b_h" value="提交" id="wrbtn2"/>
     </form>
      <span class="wrtit"><%=rrs("bigclassname")%>政策解读</span>
