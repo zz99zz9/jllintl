@@ -24,6 +24,7 @@ title=rsnew("prod_name")%>
 <script>
 $(document).ready(function(e) {
     $(".content-wrapper img").removeAttr("height");
+    $("p").css("text-indent","0");
 });
 
 </script>
