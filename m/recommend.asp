@@ -28,13 +28,10 @@ prs.open psql,conn,1,1%>
 	     prs.movenext
 	loop
 %>
-
         </div>
          <div class="swiper-pagination"></div>
     </div>
-
-
-
+<%ename=rs("entitle")&rs("title")%>
                 		<div class="content-wrapper xq">
                          <div class="tit3"><%=rs("entitle")%>&nbsp;<%=rs("title")%></div>
                          </div>
@@ -43,14 +40,12 @@ prs.open psql,conn,1,1%>
                          <div class="content-wrapper xq bline">
                          <div class="ltit2"><i class="titred"></i>房屋信息</div>
                          </div>
-                         
                          <div class="content-wrapper xq fz13">
                          房屋总价:约￥<%=rs("jgzj")%>万起<br>户型:<%=rs("hx")%><br>面积均价:￥<%=rs("jgjj")%>万起（每平米）<br>开发商:<%=rs("ckfsname")%><br><br>
                          <!--<div class="cleft"></div>
                          <div class="cright"><br></div>-->
                          <div class="cbottom"><i class="cl1 ">教育资源</i><i class="cl2 ">滨水景观</i><i class="cl3 ">绿化自然</i><br><i class="cl1 ">交通便捷</i><i class="cl2 ">商务资源</i></div>
                          </div>
-                 
                          <div class="line2"></div>
                          <div class="content-wrapper xq bline">
                          <span class="btnn hlbtn" style="color:#000"><img src="jll/img/mm1.png"><br>汇率计算</span>
@@ -59,9 +54,8 @@ prs.open psql,conn,1,1%>
                          <a class="btnn"  href="#ltit2" style="color:#000"><!--<%=rs("DefaultPicUrl2")%>--><img src="jll/img/mm4.png"><br>项目介绍</a>
                          <div class="clear"></div>
                          </div>
-                 
                          <div class="line2"></div>
- <!---->                 
+ <!---->
                          <div class="content-wrapper xq bline">
             
            <div class="ltit2"><i class="titred"></i>项目特色</div>
