@@ -27,7 +27,7 @@
         <option value="广东">广东</option>
       </select>
       <span class="errinfo"></span>
-      <input type="hidden" value="<%=title%>" id="urltit">
+      <input type="hidden" value="<%=ename%>" id="urltit">
       <input type="button" class="wrbtn b_h" value="提交" id="wrbtn2"/>
     </form>
     </div>
@@ -61,39 +61,7 @@ $(".mfzxpop .close").click(function(){
 	$(".mfzxpop").css("bottom","-300px");
 	$(".mask").fadeOut();
 });
-$(".wrbtn").click(function(){
-	$(".mfzxpop").css("bottom","-300px");
-$('.mfzxok').fadeIn()
-$(".mask").fadeOut();
 
-setTimeout("$('.mfzxok').fadeOut()",1000);
-//验证表单开始
-checkwrint1("#wrint4");
-checkwrint2("#wrint5");
-checkwrint3("#wrint6");
-checkwrint4("#wrint8");
-if ($("#wrint4").hasClass("no")||$("#wrint5").hasClass("no")||$("#wrint6").hasClass("no")){
-console.log("over");
-	}else{
-		dname=$("#wrint4").val();
-		dtel=$("#wrint5").val();
-		dmail=$("#wrint6").val();
-		dcity=$("#wrint8").val();
-		dtit=$("#urltit").val();
-			 $.post("../jll/js/dfrom.asp",{dname:dname,dtel:dtel,dmail:dmail,dcity:dcity,dtit:dtit},
-	  function(data,status){
-	  if(status=="success"){
-		//var jsObjstr =JSON.parse(data);
-		alert("提交成功！我们将尽快和您联系。");
-		}
-		});
-	
-	$("#wrint4").val("");
-$("#wrint5").val("");
-$("#wrint6").val("");
-	}
-//结束
-});
 $(".close").click(function(){
 	$(".mfzxpop").css("bottom","-300px");
 	$(".mask").fadeOut();

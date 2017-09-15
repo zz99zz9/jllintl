@@ -7,7 +7,8 @@ set rsnew=Server.CreateObject("ADODB.Recordset")
 sql="select * from [prod] where prod_id="&pro_id
 
 rsnew.Open sql,conn,1,1
-title=rsnew("prod_name")%>
+title=rsnew("prod_name")
+ename=title%>
 
                 
                 		<div class="content-wrapper" style="margin-top:85px;">
