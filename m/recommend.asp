@@ -11,8 +11,7 @@ Set rs= Server.CreateObject("ADODB.Recordset")
 sql="select * From [Table_Product] order by ArticleID desc"
 rs.open sql,conn,1,1
 end if
-%>
-               
+%>             
 <!--首页广告图-->
  <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -20,7 +19,6 @@ end if
 psql="select * From [Table_pic] where pro_id="&rs("ArticleID")&" order by oid desc,ID desc"
 prs.open psql,conn,1,1%>
 <%do while not prs.eof%>
-
             <div class="swiper-slide recommend"><img src='../<%=prs("pic_url")%>' /></div>
  <%
 	i=i+1
@@ -80,8 +78,6 @@ prs.open psql,conn,1,1%>
     <div class="ltxt" >
     <%if rs("bigclassid")=20 then%><a href="http://www.jllresidential.cn/intl/m/news_view.asp?prod_id=249" class="smh">&gt;&gt;&gt;美国置业说明会 三月中国巡回 详情请点击</a><%end if%>
    
-
-
 			<div id='map' style="padding-bottom:20px;"><img src="../<%=rs("defaultpicurl2")%>" ><div class="clear"></div></div>
             
 

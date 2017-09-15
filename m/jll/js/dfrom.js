@@ -1,5 +1,5 @@
 $(".wrbtn").click(function(){
-	$(".mfzxpop").css("bottom","-330px");
+	$(".mfzxpop").css("bottom","-350px");
 $('.mfzxok').fadeIn();
 //$(".mask").fadeOut();
 console.log("F_F");

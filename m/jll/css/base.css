@@ -110,7 +110,7 @@ i.cl3{border:#FFA002 solid 1px;border-radius:5px;color:#FFA002;padding:5px 10px;
 .btnn{width:25%;float:left;display:block;text-align:center;font-size:0.8em;}
 .btnn img{width:60%;}
 .mfzxbtn{color:#fff;background:#CD2927;height:50px;line-height:50px;text-align:center;display:none;position:fixed;bottom:0;left:0;width:100%;}
-.mfzxpop{height:300px;position:fixed;bottom:-300px;left:0;width:100%;background-color:#fff;padding-top:50px;z-index:10;}
+.mfzxpop{height:350px;position:fixed;bottom:-350px;left:0;width:100%;background-color:#fff;padding-top:50px;z-index:10;}
 .mfzxpop .close{display:block;position:absolute;top:10px;right:20px;}
 .mfzxpop .wrint{width:70%;height:35px;margin-bottom:15px;margin-left:15%;}
 .mfzxpop .wrbtn{width:70%;height:35px;margin-left:15%;background-color:#CD2927;color:#fff;}
