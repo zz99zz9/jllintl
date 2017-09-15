@@ -160,3 +160,9 @@ loop
 
 $("#nav4").attr("class","on");
 </script>
+<script>
+  $(document).ready(function(){
+$("img").removeAttr("height");
+$("p").css("text-indent","0");
+})
+</script>
