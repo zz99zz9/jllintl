@@ -93,6 +93,16 @@ do while not rsnew.eof and i<rsnew.PageSize
       <input type="text" class="wrint" value="您的姓名" id="wrint4"/><span class="errinfo"></span>
       <input type="text" class="wrint" value="手机号码" id="wrint5"/><span class="errinfo"></span>
       <input type="text" class="wrint" value="邮箱地址" id="wrint6"/><span class="errinfo"></span>
+      <select id="wrint8" class="wrint">
+        <option value="0">所在城市</option>
+        <option value="北京">北京</option>
+        <option value="天津">天津</option>
+        <option value="上海">上海</option>
+        <option value="杭州">杭州</option>
+        <option value="深圳">深圳</option>
+        <option value="广东">广东</option>
+      </select>
+      <span class="errinfo"></span>
       <input type="button" class="wrbtn b_h" value="提交" id="wrbtn2"/>
     </form>
     <span class="wrtit">更多房源</span>
