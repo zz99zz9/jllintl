@@ -66,7 +66,7 @@ function getLength(str){
         function(data,status){
         if(status=="success"){
           //var jsObjstr =JSON.parse(data);
-          alert("提交成功！我们将尽快和您联系。");
+        //  alert("提交成功！我们将尽快和您联系。");
           }
           });
       
