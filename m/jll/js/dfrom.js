@@ -1,5 +1,5 @@
 $(".wrbtn").click(function(){
-	$(".mfzxpop").css("bottom","-300px");
+	$(".mfzxpop").css("bottom","-330px");
 $('.mfzxok').fadeIn();
 //$(".mask").fadeOut();
 console.log("F_F");
@@ -114,18 +114,8 @@ function getLength(str){
           var reg = /[^\w\u4e00-\u9fa5]/g;    // 验证用户名正则 
           if ($(v).val()==""||$(v).val()=="您的姓名"){ 
           $(v).addClass("no");
-          $(v).next(".errinfo").html("名称不能为空");
-      }else if(reg.test($(v).val())){
-          $(v).addClass("no");
-          $(v).next(".errinfo").html("名称不能含有非法字符");
-  
-      }else if(getLength($(v).val())<4){
-          $(v).addClass("no");
-          $(v).next(".errinfo").html("名称不能少于4个字符");
-  
-      }else if(getLength($(v).val())>16){
-          $(v).addClass("no");
-          $(v).next(".errinfo").html("名称不能多于16个字符");
+      //    $(v).next(".errinfo").html("名称不能为空");
+
   
       }else {
           $(v).removeClass("no");
@@ -136,11 +126,7 @@ function getLength(str){
   function checkwrint2(v){
           if ($(v).val()==""||$(v).val()=="手机号码"){ 
           $(v).addClass("no");
-          $(v).next(".errinfo").html("手机号码不能为空");
-  
-      }else if(!reg2.test($(v).val())){
-          $(v).addClass("no");
-          $(v).next(".errinfo").html("请检查手机号码是否正确");
+
   
       }else{
           $(v).removeClass("no");
@@ -150,10 +136,7 @@ function getLength(str){
   function checkwrint3(v){
           if ($(v).val()==""||$(v).val()=="邮箱地址"){ 
           $(v).addClass("no");
-          $(v).next(".errinfo").html("邮箱地址不能为空");
-      }else if(!reg1.test($(v).val())){
-          $(v).addClass("no");
-          $(v).next(".errinfo").html("请确认邮箱地址是否输入正确");
+
   
       }else{
           $(v).removeClass("no");
@@ -163,7 +146,7 @@ function getLength(str){
   function checkwrint4(v){
           if ($(v).val()=="0"||$(v).val()==""){ 
           $(v).addClass("no");
-          $(v).next(".errinfo").html("请选择您的所在城市");
+      //    $(v).next(".errinfo").html("请选择您的所在城市");
   
       }else{
           $(v).removeClass("no");
