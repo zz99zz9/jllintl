@@ -163,6 +163,6 @@ $("#nav4").attr("class","on");
 <script>
   $(document).ready(function(){
 $("img").removeAttr("height");
-$("p").css("text-indent","0");
+//$("p").css("text-indent","0");
 })
 </script>
