@@ -1,9 +1,11 @@
 $(".wrbtn").click(function(){
-	$(".mfzxpop").css("bottom","-350px");
-$('.mfzxok').fadeIn();
-//$(".mask").fadeOut();
-console.log("F_F");
-setTimeout("$('.mfzxok').fadeOut()",1000);
+    console.log("F_F");
+//	$(".mfzxpop").css("bottom","-350px");
+
+
+
+//$('.mfzxok').fadeIn();
+//setTimeout("$('.mfzxok').fadeOut()",1000);
 
 //结束
 });
@@ -54,7 +56,7 @@ function getLength(str){
   checkwrint2("#wrint5");
   checkwrint3("#wrint6");
   checkwrint4("#wrint8");
-  if ($("#wrint4").hasClass("no")||$("#wrint5").hasClass("no")||$("#wrint6").hasClass("no")){
+  if ($("#wrint4").hasClass("no")||$("#wrint5").hasClass("no")){//||$("#wrint6").hasClass("no")
   console.log("over");
       }else{
           dname=$("#wrint4").val();
@@ -67,6 +69,9 @@ function getLength(str){
         if(status=="success"){
           //var jsObjstr =JSON.parse(data);
         //  alert("提交成功！我们将尽快和您联系。");
+	$(".mfzxpop").css("bottom","-350px");
+$('.mfzxok').fadeIn();
+setTimeout("$('.mfzxok').fadeOut()",1000);
           }
           });
       

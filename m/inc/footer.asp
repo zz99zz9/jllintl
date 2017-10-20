@@ -28,7 +28,7 @@
       </select>
       <span class="errinfo"></span>
       <input type="hidden" value="<%=ename%>" id="urltit">
-      <input type="button" class="wrbtn b_h" value="提交" id="wrbtn2"/>
+      <input type="button" class="wrbtn wrbtn2 b_h" value="提交" id="wrbtn2"/>
     </form>
     </div>
     <div class="mfzxok">提交成功！</div>
