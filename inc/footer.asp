@@ -5,7 +5,7 @@
 <span class="btit">网站链接</span>
 <span><a href="http://www.joneslanglasalle.com.cn/" target="_blank" rel="nofollow">仲量联行（中国）</a></span>
 <span><a href="http://www.jll.com" target="_blank" rel="nofollow">仲量联行（全球）</a></span>
-<span><a href="http://www.jllresidential.cn/guonei" target="_blank" rel="nofollow">仲量联行国内住宅</a></span>
+<span><a href="http://www.jllresidential.cn/guonei/" target="_blank" >仲量联行国内住宅</a></span>
 </div>
 
 <div class="lie">

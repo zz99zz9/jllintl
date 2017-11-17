@@ -1,6 +1,5 @@
 /*! no_rails_asset_compression */
-
-webpackJsonp([0],{358:function(){!function(t,e,n){"use strict"
+webpackJsonp([0],{362:function(){!function(t,e,n){"use strict"
 function o(t){var e=t.currentTarget,o=t.data?t.data.options:{},i=t.data?t.data.items:[],s="",a=0
 t.preventDefault()
 t.stopPropagation()
@@ -701,4 +700,3 @@ if("pushState"in history)try{history.pushState("",t.title,e.location.pathname+e.
 if(i&&""!==i)if("pushState"in history)try{history.pushState("",t.title,e.location.pathname+e.location.search+r)}catch(n){}else e.location.hash=r
 a=null}})
 i(o())}},50)})}(document,window,window.jQuery)}})
-;

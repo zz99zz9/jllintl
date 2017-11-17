@@ -25,7 +25,7 @@ SiteCont=rrs("Description")
 <!--row2:搜索条件-->
 
 <div class="w">
-  <div class="position"><a href="index.asp">JLL</a> &gt; <a href="resources.asp">海外房源</a> &gt; <a href="resources.asp?bc=<%=rrs("bigclassid")%>"><%=rrs("bigclassname")%></a> &gt; <a href="#"><%=rrs("entitle")%></a></div>
+  <div class="position"><a href="http://www.jllresidential.cn/intl/">JLL</a> &gt; <a href="resources.asp">海外房源</a> &gt; <a href="resources.asp?bc=<%=rrs("bigclassid")%>"><%=rrs("bigclassname")%></a> &gt; <a href="#"><%=rrs("entitle")%></a></div>
 </div>
 <!--弹窗-->
 
