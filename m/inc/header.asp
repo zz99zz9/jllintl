@@ -1,10 +1,11 @@
-<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+﻿<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 <%dim skey
 skey=request.QueryString("skey")%>
 <!--#include file="conn.asp"-->
 <!doctype html>
 <html lang="zh" class="no-js">
 <head>
+            
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,8 +28,13 @@ if(!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|ios)/i)){
    
     <link rel="stylesheet" href="jll/css/swiper.min.css">
      <link rel="stylesheet" href="jll/css/base.css">
+
+   
+
 </head>
 <body>
+
+                    
 	<header class="cd-main-header">
 		<a href="index.asp" class="cd-logo"><img src="jll/img/logo.svg" alt="Logo"></a>
 
