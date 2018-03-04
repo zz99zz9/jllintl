@@ -18,7 +18,12 @@ end if
 title=rrs("wz")
 siteKey=rrs("Keywords")
 SiteCont=rrs("Description")
-
+uull=rrs("DefaultPicUrl3")
+if uull="" then
+Response.Redirect("http://ir.joneslanglasalle.com.cn/")
+else
+Response.Redirect(uull)
+end if
 %>
 <!--#include file="inc/header2.asp"-->
 <link rel="stylesheet" type="text/css" href="jll/css/fyed.css"/>
