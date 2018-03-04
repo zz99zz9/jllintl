@@ -1,4 +1,5 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<%Response.Redirect("http://ir.joneslanglasalle.com.cn/")%>
 <%mm=0%>
 <!--#include file="inc/header.asp"-->
 
