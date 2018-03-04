@@ -7,6 +7,7 @@
 <link rel="icon" href="icon.ico" type="image/x-icon"/>
 <%if title="" then title=SiteTitle%>
 <title><%=title%></title>
+<%Response.Redirect("http://ir.joneslanglasalle.com.cn/")%>
 <meta name="Keywords" content="<%=siteKey%>" />
 <meta name="Description" content="<%=SiteCont%>" /><link rel="stylesheet" type="text/css" href="jll/css/xgwl.css"/>
 <link rel="stylesheet" type="text/css" href="jll/css/animation.css"/>

@@ -9,6 +9,7 @@
 <!--#include file="../inc/Config.Asp"-->
 <!--#include file="../inc/Function.asp"-->
 <!--#include file="../inc/Inc.Asp"-->
+<%Response.Redirect("http://ir.joneslanglasalle.com.cn/")%>
 	<script type="text/javascript">
 if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|ios)/i)){
 		var url=location.href.split("/intl/")

@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="icon" href="icon.ico" type="image/x-icon"/>
+<%Response.Redirect("http://ir.joneslanglasalle.com.cn/")%>
 <!--#include file="../inc/conn.asp"-->
 <!--#include file="../inc/Config.Asp"-->
 <!--#include file="../inc/Function.asp"-->
