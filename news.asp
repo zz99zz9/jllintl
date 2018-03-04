@@ -1,6 +1,6 @@
 
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
-
+<%Response.Redirect("http://ir.joneslanglasalle.com.cn/event-calendar")%>
 <%mm=2
 cid=request.QueryString("cid")
 bid=request.QueryString("bid")

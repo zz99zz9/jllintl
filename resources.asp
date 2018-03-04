@@ -1,4 +1,6 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<%Response.Redirect("http://ir.joneslanglasalle.com.cn/search?transaction=new")%>
+
 <%mm=1%>
 <!--#include file="inc/header3.asp"--> 
 <!--row2:搜索条件及排序-->

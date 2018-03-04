@@ -1,5 +1,6 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 <%mm=4%>
+<%Response.Redirect("http://ir.joneslanglasalle.com.cn/contact-us?return_to=node")%>
 <!--#include file="inc/header.asp"--> 
 <!--row2:搜索条件-->
 <div class="aboutus">

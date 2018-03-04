@@ -1,4 +1,5 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<%Response.Redirect("http://ir.joneslanglasalle.com.cn/search?transaction=new")%>
 <%mm=0
 skey=request.QueryString("skey")
 order=request.QueryString("order")%>
